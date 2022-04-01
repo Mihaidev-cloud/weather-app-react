@@ -1,0 +1,79 @@
+@import url('https://v1.fontapi.ir/css/SFProDisplay:500');
+
+body {
+  background-color: #282c34;
+  font-family: "SF Pro Display", sans-serif !important;
+}
+
+#info-weather-text {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  font-size: 3rem;
+  color: ghostwhite;
+}
+
+.search-box {
+  width: 50%;
+  left: 50%;
+  top: 3%;
+  transform: translate(-50%,-50%);
+  position: fixed;
+  margin: 0 0 75px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25px;
+
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  
+  color: #313131;
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  color: ghostwhite;
+  transform: translate(-50%,-50%);
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width:900px) {
+  .description {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    color: ghostwhite;
+    transform: translate(-50%,-50%);
+    font-size: 1rem;
+  }
+
+  #info-weather-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-size: 1.7rem;
+    color: ghostwhite;
+  }
+}
